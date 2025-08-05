@@ -1,0 +1,13 @@
+***CREATE DHCP
+enable
+conf t
+int g 1
+ip addr dhcp
+no shut
+
+
+****put this next
+conf t
+logging on 
+logging host 208.8.8.133 transport udp port 9001
+logging trap informational
