@@ -1,0 +1,31 @@
+###Configuration Change Logging(makuha lahat ng mga tinatype sa device)
+config t
+archive
+log config
+logging enable
+notify syslog
+
+
+###Failed Login Attempts(isntant log attemps)
+config t
+longin on-failure log
+login on-success log
+
+
+###this is to block ping and ssh(you will gets logs or message like denied or ip accesslogp is denied)
+config t
+access-list 100 deny ip any host 208.8.8.189 log
+access-list 100 permit ip any any
+interface GigabitEthernet0/0
+ip access-group 100 in
+
+
+###get back the ping and able to ssh again
+config t
+interface GigabitEthernet0/0
+no ip access-group 100 in
+end
+
+
+
+
