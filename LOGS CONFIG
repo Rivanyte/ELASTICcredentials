@@ -16,7 +16,7 @@ login on-success log
 config t
 access-list 100 deny ip any host 208.8.8.189 log
 access-list 100 permit ip any any
-interface GigabitEthernet0/0
+interface GigabitEthernet1
 ip access-group 100 in
 
 
