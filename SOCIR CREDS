@@ -1,0 +1,14 @@
+SOC IR CREDENTIALS:
+
+
+login for the vmware 
+username: root
+password: C1sc0123
+
+http://208.8.8.133/otrs/index.pl
+username: root@localhost
+password: C1sc0123
+
+http://208.8.8.133/otrs/customer.pl
+username: user1
+password: C1sc0123
