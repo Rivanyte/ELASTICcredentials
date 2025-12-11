@@ -29,3 +29,18 @@ end
 
 
 
+##to fix yung blocking
+config t
+access-list 100 deny tcp any any eq 22 log
+access-list 100 deny icmp any any log
+access-list 100 deny ip any host 208.8.8.92 log
+access-list 100 permit ip any any
+interface GigabitEthernet1
+ip access-group 100 in
+
+
+
+
+
+
+
