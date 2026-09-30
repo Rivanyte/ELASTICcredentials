@@ -8,7 +8,7 @@ notify syslog
 
 ###Failed Login Attempts(isntant log attemps)
 config t
-longin on-failure log
+login on-failure log
 login on-success log
 
 
